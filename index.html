@@ -1,0 +1,126 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+            font-size: 36px;
+        }
+
+        #heart {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            background-image: url;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+        #name {
+            display: none;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            line-height: 200px;
+        }
+
+        #buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            width: 100px;
+            height: 40px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #message {
+            display: none;
+            text-align: center;
+            color: red;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        #audio {
+            display: none;
+        }
+
+        #photos {
+            display: none;
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eu te amo, Nuno!</h1>
+    <div id="heart" onclick="showName()">
+        <div id="name">Nuno</div>
+    </div>
+    <div id="buttons">
+        <button class="button" onclick="sendMessage()">Enviar mensagem</button>
+        <button class="button" onclick="playSong()">Tocar música</button>
+        <button class="button" onclick="showPhotos()">Ver fotos</button>
+    </div>
+    <div id="message">Você é o amor da minha vida!</div>
+    <audio id="audio" src="^2^" controls></audio>
+    <img id="photos" src="^3^">
+    <script>
+        function showName() {
+            var name = document.getElementById("name");
+            if (name.style.display == "none") {
+                name.style.display = "block";
+            } else {
+                name.style.display = "none";
+            }
+        }
+
+        function sendMessage() {
+            var message = document.getElementById("message");
+            if (message.style.display == "none") {
+                message.style.display = "block";
+            } else {
+                message.style.display = "none";
+            }
+        }
+
+        function playSong() {
+            var audio = document.getElementById("audio");
+            if (audio.style.display == "none") {
+                audio.style.display = "block";
+                audio.play();
+            } else {
+                audio.style.display = "none";
+                audio.pause();
+            }
+        }
+
+        function showPhotos() {
+            var photos = document.getElementById("photos");
+            if (photos.style.display == "none") {
+                photos.style.display = "block";
+            } else {
+                photos.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

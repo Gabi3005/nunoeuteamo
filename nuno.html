@@ -1,0 +1,96 @@
+<html>
+<head>
+    <style>
+
+        #slide {
+            display: none;
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border: 5px solid red;
+        }
+
+        #quiz {
+            display: none;
+            text-align: center;
+            color: red;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        #question {
+            margin-bottom: 10px;
+        }
+
+        #options {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .option {
+            width: 100px;
+            height: 40px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+            color: red;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #feedback {
+            margin-top: 10px;
+        }
+
+        #share {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        #text {
+            text-align: center;
+            color: red;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        #photo {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eu te amo, Nuno!</h1>
+    <div id="heart" onclick="showName()">
+        <div id="name">Nuno</div>
+    </div>
+    <div id="buttons">
+        <button class="button" onclick="sendMessage()">Enviar mensagem</button>
+        <button class="button" onclick="playSong()">Tocar música</button>
+        <button class="button" onclick="showPhotos()">Ver fotos</button>
+        <button class="button" onclick="showTimer()">Ver contador</button>
+        <button class="button" onclick="showSlide()">Ver slide</button>
+        <button class="button" onclick="showQuiz()">Fazer quiz</button>
+    </div>
+    <div id="message">Você é o amor da minha vida!</div>
+    <audio id="audio" src="^2^" controls></audio>
+    <img id="photos" src
